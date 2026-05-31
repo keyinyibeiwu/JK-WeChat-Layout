@@ -1,0 +1,17 @@
+{
+  "name": "JK-WeChat-Layout",
+  "version": "3.0.0",
+  "description": "JK 原创设计的微信公众号排版技能 (JK Signature Edition) - 百变风格 · 全场景适配",
+  "type": "layout",
+  "author": "JK",
+  "license": "MIT",
+  "entry": "index.html",
+  "preview": "assets/preview.png",
+  "icon": "assets/icon.svg",
+  "compatibility": {
+    "minVersion": "3.0.0"
+  },
+  "capabilities": ["render", "scroll", "touch"],
+  "categories": ["layout", "wechat", "responsive"],
+  "keywords": ["微信排版", "公众号", "V3.0", "响应式", "JK"]
+}

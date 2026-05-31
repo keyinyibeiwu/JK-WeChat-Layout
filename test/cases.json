@@ -1,0 +1,69 @@
+{
+  "testCases": [
+    {
+      "id": "basic-layout",
+      "name": "基础单栏布局",
+      "input": "标题：智能排版引擎\n段落：由 JK 原创设计的响应式排版引擎",
+      "expected": {
+        "hasRootSection": true,
+        "hasMainSection": true,
+        "maxWidth": "677px",
+        "colorFormat": "hex"
+      }
+    },
+    {
+      "id": "three-card-grid",
+      "name": "三卡片网格布局",
+      "input": "功能卡片：百变风格、响应式设计、主题定制",
+      "expected": {
+        "cardCount": 3,
+        "usesFlex": true,
+        "hasGap": true
+      }
+    },
+    {
+      "id": "quote-block",
+      "name": "引用块",
+      "input": "引用：约束输出，净化输入，引导操作",
+      "expected": {
+        "hasBorderLeft": true,
+        "borderColor": "#2563eb",
+        "hasItalic": true
+      }
+    },
+    {
+      "id": "hint-block",
+      "name": "提示色块",
+      "input": "提示：使用内联样式确保兼容性",
+      "expected": {
+        "bgColor": "#dbeafe",
+        "hasEmoji": true
+      }
+    },
+    {
+      "id": "divider",
+      "name": "分隔线",
+      "input": "添加分隔线",
+      "expected": {
+        "borderTop": "1px solid #e5e7eb"
+      }
+    },
+    {
+      "id": "multistyle-test",
+      "name": "百变风格测试",
+      "input": "风格：科普风\n标题：探索宇宙奥秘\n段落：这是一篇科普风格的内容",
+      "expected": {
+        "usesAppropriateColors": true,
+        "hasProfessionalLayout": true
+      }
+    }
+  ],
+  "validationRules": [
+    "no-div-span-header-footer-tags",
+    "no-style-tag",
+    "no-class-attribute",
+    "color-must-be-hex",
+    "max-nesting-depth-4",
+    "has-root-and-main-roles"
+  ]
+}
